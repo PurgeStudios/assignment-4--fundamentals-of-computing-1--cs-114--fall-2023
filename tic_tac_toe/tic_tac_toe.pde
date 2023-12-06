@@ -4,6 +4,4 @@ void setup() {
 
 void draw() {
   Board();
-  Xshape();
-
 }
