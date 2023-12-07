@@ -1,4 +1,6 @@
-private static int heightOfBoard = 500;
-private static int widthOfBoard = 500;
-private static float radOfCircle = 164.5;
-public static int userKeyInput = 0;
+private final int HEIGHT_OF_BOARD = 500;
+private final int WIDTH_OF_BOARD = 500;
+private final float RAD_OF_CIRCLE = 164.5;
+public int[]board = {' ',' ',' ',' ',' ',' ',' ',' ',' ',' '};
+public static boolean isGameRunning = true, isHumanTurn = false;
+public int compsMove,humanTurns, win, loss;

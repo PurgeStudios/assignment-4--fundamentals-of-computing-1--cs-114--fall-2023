@@ -1,57 +1,78 @@
 private void Board(){
-  line(heightOfBoard/3,0,heightOfBoard/3, 500);
-  line(heightOfBoard/3*2,0,heightOfBoard/3*2, 500);
-  line(0,widthOfBoard/3,500,widthOfBoard/3);
-  line(0,widthOfBoard/3*2,500,widthOfBoard/3*2);
+  line(HEIGHT_OF_BOARD/3,0,HEIGHT_OF_BOARD/3, 500);
+  line(HEIGHT_OF_BOARD/3*2,0,HEIGHT_OF_BOARD/3*2, 500);
+  line(0,WIDTH_OF_BOARD/3,500,WIDTH_OF_BOARD/3);
+  line(0,WIDTH_OF_BOARD/3*2,500,WIDTH_OF_BOARD/3*2);
  }
 
-public void xShapePos(){
-  //0
-    line(0,0,heightOfBoard/3,widthOfBoard/3);
-    line(widthOfBoard/3,0,0,heightOfBoard/3);
-  //1
-    line(heightOfBoard/3,0,widthOfBoard-widthOfBoard/3-2,heightOfBoard/3);
-    line(heightOfBoard/3,widthOfBoard/3,widthOfBoard-widthOfBoard/3-2,0);
-  //2
-    line(widthOfBoard/3*2,0,widthOfBoard,heightOfBoard/3);
-    line(widthOfBoard,0,widthOfBoard-widthOfBoard/3-2,heightOfBoard/3);
-  //3
-    line(0,heightOfBoard/3,heightOfBoard/3,widthOfBoard/3*2);
-    line(heightOfBoard/3,widthOfBoard/3,0,heightOfBoard/3*2);
-  //4 - Middle Cell
-    line(heightOfBoard/3,widthOfBoard/3,widthOfBoard/3*2,heightOfBoard-heightOfBoard/3-2);
-    line(widthOfBoard-widthOfBoard/3-2,heightOfBoard/3,heightOfBoard/3,widthOfBoard/3*2);
-  //5
-    line(widthOfBoard-widthOfBoard/3-2,heightOfBoard/3,widthOfBoard,heightOfBoard/3*2);
-    line(widthOfBoard,heightOfBoard/3,heightOfBoard/3*2,widthOfBoard/3*2);
-  //6
-    line(0,heightOfBoard/3*2,widthOfBoard/3,heightOfBoard);
-    line(heightOfBoard/3,widthOfBoard/3*2,0,heightOfBoard);
-  //7
-    line(heightOfBoard/3,widthOfBoard/3*2,widthOfBoard/3*2,heightOfBoard);
-    line(widthOfBoard/3*2,heightOfBoard-heightOfBoard/3-2,widthOfBoard/3,heightOfBoard);
-  //8
-  line(widthOfBoard/3*2,heightOfBoard-heightOfBoard/3-2,widthOfBoard,heightOfBoard);
-  line(widthOfBoard,heightOfBoard/3*2,widthOfBoard/3*2,heightOfBoard);
+public void drawX(int cellnumber){
+  switch(cellnumber) {
+      case 0:
+        line(0,0,HEIGHT_OF_BOARD/3,WIDTH_OF_BOARD/3);
+        line(WIDTH_OF_BOARD/3,0,0,HEIGHT_OF_BOARD/3);
+      break;
+      case 1:
+        line(HEIGHT_OF_BOARD/3,0,WIDTH_OF_BOARD-WIDTH_OF_BOARD/3-2,HEIGHT_OF_BOARD/3);
+        line(HEIGHT_OF_BOARD/3,WIDTH_OF_BOARD/3,WIDTH_OF_BOARD-WIDTH_OF_BOARD/3-2,0);
+      break;
+      case 2:
+        line(WIDTH_OF_BOARD/3*2,0,WIDTH_OF_BOARD,HEIGHT_OF_BOARD/3);
+        line(WIDTH_OF_BOARD,0,WIDTH_OF_BOARD-WIDTH_OF_BOARD/3-2,HEIGHT_OF_BOARD/3);
+      break;
+      case 3:
+      line(0,HEIGHT_OF_BOARD/3,HEIGHT_OF_BOARD/3,WIDTH_OF_BOARD/3*2);
+      line(HEIGHT_OF_BOARD/3,WIDTH_OF_BOARD/3,0,HEIGHT_OF_BOARD/3*2);
+      break;
+      case 4:
+      line(HEIGHT_OF_BOARD/3,WIDTH_OF_BOARD/3,WIDTH_OF_BOARD/3*2,HEIGHT_OF_BOARD-HEIGHT_OF_BOARD/3-2);
+      line(WIDTH_OF_BOARD-WIDTH_OF_BOARD/3-2,HEIGHT_OF_BOARD/3,HEIGHT_OF_BOARD/3,WIDTH_OF_BOARD/3*2);
+      break;
+      case 5:
+      line(WIDTH_OF_BOARD-WIDTH_OF_BOARD/3-2,HEIGHT_OF_BOARD/3,WIDTH_OF_BOARD,HEIGHT_OF_BOARD/3*2);
+      line(WIDTH_OF_BOARD,HEIGHT_OF_BOARD/3,HEIGHT_OF_BOARD/3*2,WIDTH_OF_BOARD/3*2);
+      break;
+      case 6:
+      line(0,HEIGHT_OF_BOARD/3*2,WIDTH_OF_BOARD/3,HEIGHT_OF_BOARD);
+      line(HEIGHT_OF_BOARD/3,WIDTH_OF_BOARD/3*2,0,HEIGHT_OF_BOARD);
+      break;
+      case 7:
+      line(HEIGHT_OF_BOARD/3,WIDTH_OF_BOARD/3*2,WIDTH_OF_BOARD/3*2,HEIGHT_OF_BOARD);
+      line(WIDTH_OF_BOARD/3*2,HEIGHT_OF_BOARD-HEIGHT_OF_BOARD/3-2,WIDTH_OF_BOARD/3,HEIGHT_OF_BOARD);
+      break;
+      case 8:
+      line(WIDTH_OF_BOARD/3*2,HEIGHT_OF_BOARD-HEIGHT_OF_BOARD/3-2,WIDTH_OF_BOARD,HEIGHT_OF_BOARD);
+      line(WIDTH_OF_BOARD,HEIGHT_OF_BOARD/3*2,WIDTH_OF_BOARD/3*2,HEIGHT_OF_BOARD);
+      break;
+  }
 }
-
-void drawCirle() {
-  //0
-  circle(widthOfBoard/3/2,heightOfBoard/3/2,radOfCircle);
-  //1
-  circle(widthOfBoard/2,heightOfBoard/3/2,radOfCircle);
-  //2
-  circle(widthOfBoard-widthOfBoard/3/2,heightOfBoard/3/2,radOfCircle);
-  //3
-  circle(widthOfBoard/3/2,heightOfBoard-heightOfBoard/2,radOfCircle);
-  //4
-  circle(widthOfBoard/2,heightOfBoard-heightOfBoard/2,radOfCircle);
-  //5
-  circle(widthOfBoard-widthOfBoard/3/2,heightOfBoard-heightOfBoard/2,radOfCircle);
-  //6
-  circle(widthOfBoard/3/2,heightOfBoard-84,radOfCircle);
-  //7
-  circle(widthOfBoard/2,heightOfBoard-84,radOfCircle);
-  //8
-  circle(widthOfBoard-widthOfBoard/3/2,heightOfBoard-84,radOfCircle);
+public void drawO(int cellnumber) {
+  switch(cellnumber) {
+      case 0:
+        circle(WIDTH_OF_BOARD/3/2,HEIGHT_OF_BOARD/3/2,RAD_OF_CIRCLE);
+      break;
+      case 1:
+        circle(WIDTH_OF_BOARD/2,HEIGHT_OF_BOARD/3/2,RAD_OF_CIRCLE);
+      break;
+      case 2:
+        circle(WIDTH_OF_BOARD-WIDTH_OF_BOARD/3/2,HEIGHT_OF_BOARD/3/2,RAD_OF_CIRCLE);
+      break;
+      case 3:
+        circle(WIDTH_OF_BOARD/3/2,HEIGHT_OF_BOARD-HEIGHT_OF_BOARD/2,RAD_OF_CIRCLE);
+      break;
+      case 4:
+        circle(WIDTH_OF_BOARD/2,HEIGHT_OF_BOARD-HEIGHT_OF_BOARD/2,RAD_OF_CIRCLE);
+      break;
+      case 5:
+        circle(WIDTH_OF_BOARD-WIDTH_OF_BOARD/3/2,HEIGHT_OF_BOARD-HEIGHT_OF_BOARD/2,RAD_OF_CIRCLE);
+      break;
+      case 6:
+        circle(WIDTH_OF_BOARD/3/2,HEIGHT_OF_BOARD-84,RAD_OF_CIRCLE);
+      break;
+      case 7:
+        circle(WIDTH_OF_BOARD/2,HEIGHT_OF_BOARD-84,RAD_OF_CIRCLE);
+      break;
+      case 8:
+        circle(WIDTH_OF_BOARD-WIDTH_OF_BOARD/3/2,HEIGHT_OF_BOARD-84,RAD_OF_CIRCLE);
+      break;
+  }
 }
