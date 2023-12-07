@@ -1,5 +1,4 @@
 private static int heightOfBoard = 500;
 private static int widthOfBoard = 500;
-private static int cellHeight = heightOfBoard/3;
-private static int cellWidth = widthOfBoard/3;
-private static int radOfCircle = 166;
+private static float radOfCircle = 164.5;
+public static int userKeyInput = 0;
