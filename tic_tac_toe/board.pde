@@ -1,30 +1,30 @@
 void keyPressed() {
   switch(key) {
     case '0':
-    if (isGameRunning == false && lose == 1 || win == 1){
-       println("The game has ended!");
+      if (isGameRunning == false && lose == 1 || win == 1){
+        println("The game has ended!");
       }
-    else if (isGameRunning == true && board[0]=='X'||board[0]=='O' && humanTurns < 4 && win == 0) {
-      println("Cell already taken, please choose an open cell.");
-      isHumanTurn = true;
+      else if (isGameRunning == true && board[0] == 'X' || board[0] == 'O' && humanTurns < 4 && win == 0) {
+        println("Cell already taken, please choose an open cell.");
+        isHumanTurn = true;
       }
-    else if(isGameRunning == true){
+      else if(isGameRunning == true){
       drawO(0);
       board[0] = 'O';
       humanTurns++;
       userHasWon();
       isHumanTurn = false;
       computerTurn();
-    }
-    else if (isGameRunning == false && humanTurns == 4){
-      println("It's a draw!");
-    }
+      }
+      else if (isGameRunning == false && humanTurns == 4){
+        println("It's a draw!");
+      }
     break;
     case '1':
-    if (isGameRunning == false && lose == 1 || win == 1){
+      if (isGameRunning == false && lose == 1 || win == 1){
        println("The game has ended!");
       }
-    else if (isGameRunning == true && board[1]=='X'||board[1]=='O' && humanTurns < 4) {
+      else if (isGameRunning == true && board[1] == 'X' || board[1] == 'O' && humanTurns < 4) {
         println("Cell already taken, please choose an open cell.");
         isHumanTurn = true;
       }
@@ -41,10 +41,10 @@ void keyPressed() {
       }
     break;
     case '2':
-    if (isGameRunning == false && lose == 1 || win == 1){
+      if (isGameRunning == false && lose == 1 || win == 1){
        println("The game has ended!");
       }
-    else if (isGameRunning == true && board[2]=='X'||board[2]=='O' && humanTurns < 4) {
+      else if (isGameRunning == true && board[2] == 'X' || board[2] == 'O' && humanTurns < 4) {
         println("Cell already taken, please choose an open cell.");
         isHumanTurn = true;
       }
@@ -61,10 +61,10 @@ void keyPressed() {
       }
     break;
     case '3':
-    if (isGameRunning == false && lose == 1 || win == 1){
+      if (isGameRunning == false && lose == 1 || win == 1){
        println("The game has ended!");
       }
-      else if (isGameRunning == true && board[3]=='X'||board[3]=='O' && humanTurns < 4) {
+      else if (isGameRunning == true && board[3] == 'X' || board[3] == 'O' && humanTurns < 4) {
         println("Cell already taken, please choose an open cell.");
         isHumanTurn = true;
       }
@@ -81,10 +81,10 @@ void keyPressed() {
       }
     break;
     case '4':
-    if (isGameRunning == false && lose == 1 || win == 1){
+      if (isGameRunning == false && lose == 1 || win == 1){
        println("The game has ended!");
       }
-      else if (isGameRunning == true && board[4]=='X'||board[4]=='O' && humanTurns < 4) {
+      else if (isGameRunning == true && board[4] == 'X' || board[4] == 'O' && humanTurns < 4) {
         println("Cell already taken, please choose an open cell.");
         isHumanTurn = true;
       }
@@ -101,10 +101,10 @@ void keyPressed() {
       }
     break;
     case '5':
-    if (isGameRunning == false && lose == 1 || win == 1){
+      if (isGameRunning == false && lose == 1 || win == 1){
        println("The game has ended!");
       }
-      else if (isGameRunning == true && board[5]=='X'||board[5]=='O' && humanTurns < 4) {
+      else if (isGameRunning == true && board[5] == 'X' || board[5] == 'O' && humanTurns < 4) {
         println("Cell already taken, please choose an open cell.");
         isHumanTurn = true;
       }
@@ -121,10 +121,10 @@ void keyPressed() {
       }
     break;
     case '6':
-    if (isGameRunning == false && lose == 1 || win == 1){
+      if (isGameRunning == false && lose == 1 || win == 1){
        println("The game has ended!");
       }
-      else if (isGameRunning == true && board[6]=='X'||board[6]=='O' && humanTurns < 4) {
+      else if (isGameRunning == true && board[6] == 'X' || board[6] == 'O' && humanTurns < 4) {
         println("Cell already taken, please choose an open cell.");
         isHumanTurn = true;
       }
@@ -141,10 +141,10 @@ void keyPressed() {
       }
     break;
     case '7':
-    if (isGameRunning == false && lose == 1 || win == 1){
+      if (isGameRunning == false && lose == 1 || win == 1){
        println("The game has ended!");
       }
-      else if (isGameRunning == true && board[7]=='X'||board[7]=='O' && humanTurns < 4) {
+      else if (isGameRunning == true && board[7] == 'X' || board[7] == 'O' && humanTurns < 4) {
         println("Cell already taken, please choose an open cell.");
         isHumanTurn = true;
       }
@@ -161,10 +161,10 @@ void keyPressed() {
       }
     break;
     case '8':
-    if (isGameRunning == false && lose == 1 || win == 1){
+      if (isGameRunning == false && lose == 1 || win == 1){
        println("The game has ended!");
       }
-      else if (isGameRunning == true && board[8]=='X'||board[8]=='O' && humanTurns < 4) {
+      else if (isGameRunning == true && board[8] == 'X' || board[8] == 'O' && humanTurns < 4) {
         println("Cell already taken, please choose an open cell.");
         isHumanTurn = true;
       }
@@ -183,10 +183,10 @@ void keyPressed() {
     default :
      if(isGameRunning == true) {
      println("You did not press a number between 0-8");
-    }
-    if(isGameRunning == false) {
-     println("The game has ended!");
-    }
+      }
+      if(isGameRunning == false) {
+        println("The game has ended!");
+      }
     break;
   }
 }
@@ -196,7 +196,7 @@ void computerTurn(){
     do {
       compsMove = round(random(8));
     }
-    while (board[compsMove] == 'X'|| board[compsMove] == 'O'); {
+    while (board[compsMove] == 'X' || board[compsMove] == 'O'); {
       switch (compsMove) {
         case 0:
           drawX(0);
@@ -289,49 +289,49 @@ void computerTurn(){
 }
 
 void compHasWon() {
-  if (board[0]== 'X' && board[1]=='X' && board[2]=='X') {
+  if (board[0] == 'X' && board[1] == 'X' && board[2] == 'X') {
     println("Computer wins!");
     isGameRunning = false;
     win = 1;
     return;
   }
-  else if (board[3]== 'X' && board[4]=='X' && board[5]=='X') {
+  else if (board[3] == 'X' && board[4] == 'X' && board[5] == 'X') {
     println("Computer wins!");
     isGameRunning = false;
     win = 1;
     return;
   }
-  else if (board[6]== 'X' && board[7]=='X' && board[8]=='X') {
+  else if (board[6] == 'X' && board[7] == 'X' && board[8] == 'X') {
     println("Computer wins!");
     isGameRunning = false;
     win = 1;
     return;
   }
-  else if (board[0]== 'X' && board[3]=='X' && board[6]=='X') {
+  else if (board[0] == 'X' && board[3] == 'X' && board[6] == 'X') {
     println("Computer wins!");
     isGameRunning = false;
     win = 1;
     return;
   }
-  else if (board[1]== 'X' && board[4]=='X' && board[7]=='X') {
+  else if (board[1] == 'X' && board[4] == 'X' && board[7] == 'X') {
     println("Computer wins!");
     isGameRunning = false;
     win = 1;
     return;
   }
-  else if (board[2]== 'X' && board[5]=='X' && board[8]=='X') {
+  else if (board[2] == 'X' && board[5] == 'X' && board[8] == 'X') {
     println("Computer wins!");
     isGameRunning = false;
     win = 1;
     return;
   }
-  else if (board[0]== 'X' && board[4]=='X' && board[8]=='X') {
+  else if (board[0] == 'X' && board[4] == 'X' && board[8] == 'X') {
     println("Computer wins!");
     isGameRunning = false;
     win = 1;
     return;
   }
-  else if (board[2]== 'X' && board[4]=='X' && board[6]=='X') {
+  else if (board[2] == 'X' && board[4] == 'X' && board[6] == 'X') {
     println("Computer wins!");
     isGameRunning = false;
     win = 1;
@@ -340,49 +340,49 @@ void compHasWon() {
 }
 
 void userHasWon() {
-  if (board[0]== 'O' && board[1]=='O' && board[2]=='O') {
+  if (board[0] == 'O' && board[1] == 'O' && board[2] == 'O') {
     println("You win!");
     isGameRunning = false;
     win = 1;
     return;
   }
-  else if (board[3]== 'O' && board[4]=='O' && board[5]=='O') {
+  else if (board[3] == 'O' && board[4] == 'O' && board[5] == 'O') {
     println("You win!");
     isGameRunning = false;
     win = 1;
     return;
   }
-  else if (board[6]== 'O' && board[7]=='O' && board[8]=='O') {
+  else if (board[6] == 'O' && board[7] == 'O' && board[8] == 'O') {
     println("You win!");
     isGameRunning = false;
     win = 1;
     return;
   }
-  else if (board[0]== 'O' && board[3]=='O' && board[6]=='O') {
+  else if (board[0] == 'O' && board[3] == 'O' && board[6] == 'O') {
     println("You win!");
     isGameRunning = false;
     win = 1;
     return;
   }
-  else if (board[1]== 'O' && board[4]=='O' && board[7]=='O') {
+  else if (board[1] == 'O' && board[4] == 'O' && board[7] == 'O') {
     println("You win!");
     isGameRunning = false;
     win = 1;
     return;
   }
-  else if (board[2]== 'O' && board[5]=='O' && board[8]=='O') {
+  else if (board[2] == 'O' && board[5] == 'O' && board[8] == 'O') {
     println("You win!");
     isGameRunning = false;
     win = 1;
     return;
   }
-  else if (board[0]== 'O' && board[4]=='O' && board[8]=='O') {
+  else if (board[0] == 'O' && board[4] == 'O' && board[8] == 'O') {
     println("You win!");
     isGameRunning = false;
     win = 1;
     return;
   }
-  else if (board[2]== 'O' && board[4]=='O' && board[6]=='O') {
+  else if (board[2] == 'O' && board[4] == 'O' && board[6] == 'O') {
     println("You win!");
     isGameRunning = false;
     win = 1;
