@@ -2,10 +2,10 @@ void keyPressed() {
   switch(key) {
     case '0':
     if (isGameRunning == false && lose == 1 || win == 1){
-       println("Game has ended");
+       println("The game has ended!");
       }
     else if (isGameRunning == true && board[0]=='X'||board[0]=='O' && humanTurns < 4 && win == 0) {
-      println("Cell already taken, please choose an open cell");
+      println("Cell already taken, please choose an open cell.");
       isHumanTurn = true;
       }
     else if(isGameRunning == true){
@@ -17,15 +17,15 @@ void keyPressed() {
       computerTurn();
     }
     else if (isGameRunning == false && humanTurns == 4){
-      println("It's a tie!");
+      println("It's a draw!");
     }
     break;
     case '1':
     if (isGameRunning == false && lose == 1 || win == 1){
-       println("Game has ended");
+       println("The game has ended!");
       }
     else if (isGameRunning == true && board[1]=='X'||board[1]=='O' && humanTurns < 4) {
-        println("Cell already taken, please choose an open cell");
+        println("Cell already taken, please choose an open cell.");
         isHumanTurn = true;
       }
       else if(isGameRunning == true){
@@ -37,15 +37,15 @@ void keyPressed() {
         computerTurn();
       }
       else if (isGameRunning == false && humanTurns == 4){
-        println("It's a tie!");
+        println("It's a draw!");
       }
     break;
     case '2':
     if (isGameRunning == false && lose == 1 || win == 1){
-       println("Game has ended");
+       println("The game has ended!");
       }
     else if (isGameRunning == true && board[2]=='X'||board[2]=='O' && humanTurns < 4) {
-        println("Cell already taken, please choose an open cell");
+        println("Cell already taken, please choose an open cell.");
         isHumanTurn = true;
       }
       else if(isGameRunning == true){
@@ -57,15 +57,15 @@ void keyPressed() {
         computerTurn();
       }
       else if (isGameRunning == false && humanTurns == 4){
-        println("It's a tie!");
+        println("It's a draw!");
       }
     break;
     case '3':
     if (isGameRunning == false && lose == 1 || win == 1){
-       println("Game has ended");
+       println("The game has ended!");
       }
       else if (isGameRunning == true && board[3]=='X'||board[3]=='O' && humanTurns < 4) {
-        println("Cell already taken, please choose an open cell");
+        println("Cell already taken, please choose an open cell.");
         isHumanTurn = true;
       }
       else if(isGameRunning == true){
@@ -77,15 +77,15 @@ void keyPressed() {
         computerTurn();
       }
       else if (isGameRunning == false && humanTurns == 4){
-        println("It's a tie!");
+        println("It's a draw!");
       }
     break;
     case '4':
     if (isGameRunning == false && lose == 1 || win == 1){
-       println("Game has ended");
+       println("The game has ended!");
       }
       else if (isGameRunning == true && board[4]=='X'||board[4]=='O' && humanTurns < 4) {
-        println("Cell already taken, please choose an open cell");
+        println("Cell already taken, please choose an open cell.");
         isHumanTurn = true;
       }
       else if(isGameRunning == true){
@@ -97,15 +97,15 @@ void keyPressed() {
         computerTurn();
       }
       else if (isGameRunning == false && humanTurns == 4){
-        println("It's a tie!");
+        println("It's a draw!");
       }
     break;
     case '5':
     if (isGameRunning == false && lose == 1 || win == 1){
-       println("Game has ended");
+       println("The game has ended!");
       }
       else if (isGameRunning == true && board[5]=='X'||board[5]=='O' && humanTurns < 4) {
-        println("Cell already taken, please choose an open cell");
+        println("Cell already taken, please choose an open cell.");
         isHumanTurn = true;
       }
       else if(isGameRunning == true){
@@ -117,15 +117,15 @@ void keyPressed() {
         computerTurn();
       }
       else if (isGameRunning == false && humanTurns == 4){
-        println("It's a tie!");
+        println("It's a draw!");
       }
     break;
     case '6':
     if (isGameRunning == false && lose == 1 || win == 1){
-       println("Game has ended");
+       println("The game has ended!");
       }
       else if (isGameRunning == true && board[6]=='X'||board[6]=='O' && humanTurns < 4) {
-        println("Cell already taken, please choose an open cell");
+        println("Cell already taken, please choose an open cell.");
         isHumanTurn = true;
       }
       else if(isGameRunning == true){
@@ -137,15 +137,15 @@ void keyPressed() {
         computerTurn();
       }
       else if (isGameRunning == false && humanTurns == 4){
-        println("It's a tie!");
+        println("It's a draw!");
       }
     break;
     case '7':
     if (isGameRunning == false && lose == 1 || win == 1){
-       println("Game has ended");
+       println("The game has ended!");
       }
       else if (isGameRunning == true && board[7]=='X'||board[7]=='O' && humanTurns < 4) {
-        println("Cell already taken, please choose an open cell");
+        println("Cell already taken, please choose an open cell.");
         isHumanTurn = true;
       }
       else if(isGameRunning == true){
@@ -157,15 +157,15 @@ void keyPressed() {
         computerTurn();
       }
       else if (isGameRunning == false && humanTurns == 4){
-        println("It's a tie!");
+        println("It's a draw!");
       }
     break;
     case '8':
     if (isGameRunning == false && lose == 1 || win == 1){
-       println("Game has ended");
+       println("The game has ended!");
       }
       else if (isGameRunning == true && board[8]=='X'||board[8]=='O' && humanTurns < 4) {
-        println("Cell already taken, please choose an open cell");
+        println("Cell already taken, please choose an open cell.");
         isHumanTurn = true;
       }
       else if(isGameRunning == true){
@@ -177,12 +177,15 @@ void keyPressed() {
         computerTurn();
       }
       else if (isGameRunning == false && humanTurns == 4){
-        println("It's a tie!");
+        println("It's a draw!");
       }
     break;
     default :
      if(isGameRunning == true) {
      println("You did not press a number between 0-8");
+    }
+    if(isGameRunning == false) {
+     println("The game has ended!");
     }
     break;
   }
@@ -279,7 +282,7 @@ void computerTurn(){
       }
       if (isGameRunning == true && humanTurns == 4){
         isGameRunning = false;
-        println("It's a tie!");
+        println("It's a draw!");
       }
     }
   }
