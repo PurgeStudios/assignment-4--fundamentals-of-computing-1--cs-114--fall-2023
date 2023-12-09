@@ -1,4 +1,4 @@
-private void Board() {
+private void board() {
   stroke(0, 255, 0);
   line(HEIGHT_OF_BOARD/3, 0, HEIGHT_OF_BOARD/3, HEIGHT_OF_BOARD);
   line(HEIGHT_OF_BOARD/3*2, 0, HEIGHT_OF_BOARD/3*2, HEIGHT_OF_BOARD);
@@ -6,8 +6,8 @@ private void Board() {
   line(0, WIDTH_OF_BOARD/3*2, WIDTH_OF_BOARD, WIDTH_OF_BOARD/3*2);
  }
 
-public void drawX(int cellnumber) {
-  switch(cellnumber) {
+public void drawX(int cellOfBoard) {
+  switch(cellOfBoard) {
     case 0:
       stroke(255);
       line(0, 0, HEIGHT_OF_BOARD/3, WIDTH_OF_BOARD/3);
@@ -56,8 +56,8 @@ public void drawX(int cellnumber) {
   }
 }
 
-public void drawO(int cellnumber) {
-  switch(cellnumber) {
+public void drawO(int cellOfBoard) {
+  switch(cellOfBoard) {
     case 0:
       fill(0);
       stroke(255, 0, 0);
