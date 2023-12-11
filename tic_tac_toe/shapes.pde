@@ -7,7 +7,7 @@ private void board() {
   line(0, WIDTH_OF_BOARD/3*2, WIDTH_OF_BOARD, WIDTH_OF_BOARD/3*2);
  }
 
-public void drawX(int cellOfBoard) {
+public void drawXatPos(int cellOfBoard) {
   switch(cellOfBoard) {
     case 0:
       stroke(255);
@@ -57,7 +57,7 @@ public void drawX(int cellOfBoard) {
   }
 }
 
-public void drawO(int cellOfBoard) {
+public void drawOatPos(int cellOfBoard) {
   switch(cellOfBoard) {
     case 0:
       fill(0);
