@@ -1,4 +1,5 @@
 private void board() {
+  strokeWeight(2);
   stroke(0, 255, 0);
   line(HEIGHT_OF_BOARD/3, 0, HEIGHT_OF_BOARD/3, HEIGHT_OF_BOARD);
   line(HEIGHT_OF_BOARD/3*2, 0, HEIGHT_OF_BOARD/3*2, HEIGHT_OF_BOARD);
